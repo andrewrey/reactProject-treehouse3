@@ -66,9 +66,9 @@ class App extends Component {
     return (
       <Provider value={this.state.players}>
         <div className="scoreboard">
-          <Header players={this.state.players} />
+          <Header />
 
-          <PlayerList players={this.state.players} changeScore={this.handleScoreChange} removePlayer={this.handleRemovePlayer} />
+          <PlayerList changeScore={this.handleScoreChange} removePlayer={this.handleRemovePlayer} />
 
           <AddPlayerForm addPlayer={this.handleAddPlayer} />
         </div>
